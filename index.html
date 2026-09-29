@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body id="body">
+
+    <h1 id="header">HTML and CSS Quiz</h1>
+    <p id="tries">Times Taken: <span id="demo"></span></p>
+
+    <label class="question" id="question1">1. What is "One" as an integer?</label>
+    <div id="q1Choices"></div>
+    <p class="origTryMessage" id="tryMessage"></p>
+    <figure>
+        <img class="image" id="image1" />
+    </figure>
+
+    <label class="question" id="question2">2. What is "Two" as an integer?</label>
+    <br>
+    <input type="text" id="q2">
+    <p class="origTryMessage" id="tryMessage2"></p>
+    <figure>
+        <img class="image" id="image2" />
+    </figure>
+
+    <label class="question" id="question3">3. What is "Three" as an integer?</label>
+    <br>
+    <select id="q3">
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    <p class="origTryMessage" id="tryMessage3"></p>
+    <figure>
+        <img class="image" id="image3" />
+    </figure>
+
+    <label class="question" id="question4">4. What is "Four" as an integer?</label>
+    <br>
+    <input type="number" id="q4">
+    <p class="origTryMessage" id="tryMessage4"></p>
+   <figure>
+        <img class="image" id="image4" />
+    </figure>
+
+    <label class="question" id="question5">5. What is "Five" as an integer?</label>
+    <div id="q5Choices">
+        <input type ="checkbox" name="q5" id="q5-1" value="1">
+        <label for="q5-1">1</label>
+        <input type ="checkbox" name="q5" id="q5-3" value="3">
+        <label for="q5-3">3</label>
+        <input type ="checkbox" name="q5" id="q5-5" value="5">
+        <label for="q5-5">5</label>
+        <input type ="checkbox" name="q5" id="q5-7" value="7">
+        <label for="q5-7">7</label>
+    </div>
+    <p class="origTryMessage" id="tryMessage5"></p>
+    <figure>
+        <img class="image" id="image5" />
+    </figure>
+
+    <button onclick="clickCounter()" type="button">Submit Quiz</button>
+
+    <p id="totalScoreText"></p>
+</body>
+</html>
